@@ -1,0 +1,13 @@
+#mealContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#mealContainer > div {
+  padding: 20px;
+  width: 300px;
+}
+
+#renderHomePage {
+  text-align: center;
+}
