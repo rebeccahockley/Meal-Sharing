@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export const ReservationForm = ({ reservationID }) => {
+export const ReservationForm = () => {
   const [userValues, setUserValues] = useState({
     ContactName: "",
     ContactPhoneNumber: "",
@@ -13,42 +13,43 @@ export const ReservationForm = ({ reservationID }) => {
     setUserValues({ ...userValues, [key]: value });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (userValues.ContactName != "" && userValues.ContactEmail != "") {
-      try {
-        const response = await fetch(
-          "https://localhost:5000/api/reservations",
-          {
-            method: "POST",
-            body: JSON.stringify({
-              Meal_ID: reservationID,
-              Contact_Name: userValues.ContactName,
-              Contact_PhoneNumber: userValues.ContactPhoneNumber,
-              Contact_Email: userValues.ContactEmail,
-              No_Of_Guests: 1,
-              Created_Date: new Date().toISOString(),
-            }),
-            headers: { "Content-Type": "application/json" },
-          }
-        );
-        if (response.status === 200) {
-          alert("Your seat is booked! Enjoy!");
-          return response;
-        } else {
-          alert("Something went wrong. Please try again");
-          return;
-        }
-      } catch (error) {
-        console.log(error);
-      }
-    } else {
-      alert("Please enter the required fields");
-    }
-  };
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+
+  //   if (userValues.ContactName != "" && userValues.ContactEmail != "") {
+  //     try {
+  //       const response = await fetch(
+  //         "https://localhost:5000/api/reservations",
+  //         {
+  //           method: "POST",
+  //           body: JSON.stringify({
+  //             Meal_ID: reservationID,
+  //             Contact_Name: userValues.ContactName,
+  //             Contact_PhoneNumber: userValues.ContactPhoneNumber,
+  //             Contact_Email: userValues.ContactEmail,
+  //             No_Of_Guests: 1,
+  //             // Created_Date: new Date().toISOString(),
+  //           }),
+  //           headers: { "Content-Type": "application/json" },
+  //         }
+  //       );
+  //       if (response.status === 200) {
+  //         alert("Your seat is booked! Enjoy!");
+  //         return response;
+  //       } else {
+  //         alert("Something went wrong. Please try again");
+  //         return;
+  //       }
+  //     } catch (error) {
+  //       console.log(error);
+  //     }
+  //   } else {
+  //     alert("Please enter the required fields");
+  //   }
+  // };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form>
       <div id="reservationForm">
         <label>
           <p>Name:</p>
@@ -77,9 +78,9 @@ export const ReservationForm = ({ reservationID }) => {
           ></input>
         </label>
         <span>
-          <button type="submit" onClick={handleSubmit}>
+          {/* <button type="submit" onClick={handleSubmit}>
             Submit
-          </button>
+          </button> */}
         </span>
       </div>
     </form>
