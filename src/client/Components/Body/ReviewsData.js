@@ -15,7 +15,6 @@ export const ReviewData = () => {
         return response.json();
       })
       .then((data) => {
-        console.log(data);
         setData(data);
       });
   }

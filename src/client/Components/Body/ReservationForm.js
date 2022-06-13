@@ -18,21 +18,17 @@ export const ReservationForm = ({ reservationID }) => {
 
     if (userValues.ContactName != "" && userValues.ContactEmail != "") {
       try {
-        const response = await fetch(
-          "https://localhost:5000/api/reservations",
-          {
-            method: "POST",
-            body: JSON.stringify({
-              Meal_ID: reservationID,
-              Contact_Name: userValues.ContactName,
-              Contact_PhoneNumber: userValues.ContactPhoneNumber,
-              Contact_Email: userValues.ContactEmail,
-              No_Of_Guests: 1,
-              // Created_Date: new Date().toISOString(),
-            }),
-            headers: { "Content-Type": "application/json" },
-          }
-        );
+        const response = await fetch("./api/reservations", {
+          method: "POST",
+          body: JSON.stringify({
+            Meal_ID: reservationID,
+            Contact_Name: userValues.ContactName,
+            Contact_PhoneNumber: userValues.ContactPhoneNumber,
+            Contact_Email: userValues.ContactEmail,
+            No_Of_Guests: 1,
+          }),
+          headers: { "Content-Type": "application/json" },
+        });
         if (response.status === 200) {
           alert("Your seat is booked! Enjoy!");
           return response;
