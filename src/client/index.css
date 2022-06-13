@@ -30,17 +30,17 @@ button {
   padding: 5px;
   font-size: 14px;
 }
-/* 
+
 @media screen and (max-width: 1400px) {
   #root {
     padding-left: 30%;
     padding-right: 30%;
   }
-} */
-/* 
+}
+
 @media screen and (max-width: 750px) {
   #root {
     padding-left: 0;
     padding-right: 0;
   }
-} */
+}
