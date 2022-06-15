@@ -32,7 +32,8 @@ router.put("/:id", async (request, response) => {
       .where("id", parseInt(request.params.id))
       .update(request.body);
     response.status(200).json(updateMealByID);
-  } catch {
+  } catch (error) {
+    console.log(error);
     response
       .status(400)
       .send("Could not update meal, please check you have the correct ID");
