@@ -10,7 +10,7 @@ export const MealByID = () => {
     fetchMealIdData();
   }, []);
   function fetchMealIdData() {
-    fetch(`http://localhost:5000/api/meals/${params.mealId}`)
+    fetch(`api/meals/${params.mealId}`)
       .then((response) => {
         return response.json();
       })

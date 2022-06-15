@@ -10,7 +10,7 @@ export const ReviewData = () => {
   }, []);
 
   function fetchReviewData() {
-    fetch("http://localhost:5000/api/reviews")
+    fetch("api/reviews")
       .then((response) => {
         return response.json();
       })

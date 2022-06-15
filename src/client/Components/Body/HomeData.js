@@ -8,7 +8,7 @@ export const HomeMealData = () => {
     fetchHomeMealData();
   }, []);
   function fetchHomeMealData() {
-    fetch("http://localhost:5000/api/meals")
+    fetch("api/meals")
       .then((response) => {
         return response.json();
       })
