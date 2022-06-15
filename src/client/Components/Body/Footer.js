@@ -12,7 +12,7 @@ export const Footer = () => {
       <div id="footerImageContainer">
         <a href="https://www.facebook.com/">
           <img
-            src="/assets/facebook.jpg"
+            src="../assets/facebook.jpg"
             className="footerImages"
             alt="Outline of Facebook Logo"
           ></img>
