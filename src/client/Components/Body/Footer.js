@@ -18,25 +18,13 @@ export const Footer = () => {
           ></img>
         </a>
         <a href="https://github.com/rebeccahockley">
-          <img
-            src={gitHubLogo}
-            className="footerImages"
-            alt="Outline of GitHub Logo"
-          ></img>
+          <img className="footerImages" alt="Outline of GitHub Logo"></img>
         </a>
         <a href="https://www.instagram.com/">
-          <img
-            src={instagramLogo}
-            className="footerImages"
-            alt="Outline of Instagram Logo"
-          ></img>
+          <img className="footerImages" alt="Outline of Instagram Logo"></img>
         </a>
         <a href="https://www.linkedin.com/in/rebecca-hockley-6b4475238/">
-          <img
-            src={linkedInLogo}
-            className="footerImages"
-            alt="Outline of LinkedIn Logo"
-          ></img>
+          <img className="footerImages" alt="Outline of LinkedIn Logo"></img>
         </a>
       </div>
     </footer>
