@@ -10,7 +10,7 @@ export const Header = () => {
           <h1>Book. Meet. Eat.</h1>
           <h2>A meal sharing app designed to bring people together.</h2>
           <img
-            src="./src/client/Components/Assets/Banner.jpeg"
+            src="/assets/banner.jpeg"
             id="banner"
             alt="Banner showing 12 vector outlines of different food and drinks"
           ></img>

@@ -8,28 +8,28 @@ export const Footer = () => {
       <div id="footerImageContainer">
         <a href="https://www.facebook.com/">
           <img
-            src="Assets/Facebook.jpg"
+            src="/assets/facebook.jpg"
             className="footerImages"
             alt="Outline of Facebook Logo"
           ></img>
         </a>
         <a href="https://github.com/rebeccahockley">
           <img
-            src="Assets/GitHub.jpg"
+            src="/assets/gitHub.jpg"
             className="footerImages"
             alt="Outline of GitHub Logo"
           ></img>
         </a>
         <a href="https://www.instagram.com/">
           <img
-            src="Assets/Instagram.png"
+            src="/assets/instagram.png"
             className="footerImages"
             alt="Outline of Instagram Logo"
           ></img>
         </a>
         <a href="https://www.linkedin.com/in/rebecca-hockley-6b4475238/">
           <img
-            src="Assets/LinkedIn.png"
+            src="/assets/linkedIn.png"
             className="footerImages"
             alt="Outline of LinkedIn Logo"
           ></img>
