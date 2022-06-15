@@ -43,7 +43,7 @@ module.exports = {
     extensions: ["*", ".js", ".jsx"],
   },
   devServer: {
-    publicPath: "/",
+    static: "/",
     historyApiFallback: true,
     port: parseInt(process.env.CLIENT_PORT, 10),
     open: process.env.OPEN_BROWSER === "true" ? true : false,
@@ -58,7 +58,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      filename: "./public/index.html",
+      template: "./public/index.html",
       favicon: "./public/favicon.ico",
     }),
     new CaseSensitivePathsPlugin(),
