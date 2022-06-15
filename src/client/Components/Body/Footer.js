@@ -1,9 +1,9 @@
 import React from "react";
 import "./Styling/FooterStyles.css";
-import facebookLogo from "../../assets/facebook.jpg";
-import gitHubLogo from "../../assets/gitHub.jpg";
-import instagramLogo from "../../assets/instagram.jpg";
-import linkedInLogo from "../../assets/linkedIn.jpg";
+import facebookLogo from "/assets/facebook.jpg";
+import gitHubLogo from "/assets/gitHub.jpg";
+import instagramLogo from "/assets/instagram.jpg";
+import linkedInLogo from "/assets/linkedIn.jpg";
 
 export const Footer = () => {
   return (
