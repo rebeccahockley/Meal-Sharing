@@ -14,16 +14,15 @@ router.post("/", async (request, response) => {
 });
 
 router.get("/:id", async (request, response) => {
-  // try {
-  //   const getMealByID = await knex("Meal").where(
-  //     "ID",
-  //     parseInt(request.params.id)
-  //   );
-  //   response.status(200).json(getMealByID);
-  // } catch {
-  //   response.status(400).send("Please input a valid ID");
-  // }
-  response.status(200).json({});
+  try {
+    const getMealByID = await knex("Meal").where(
+      "ID",
+      parseInt(request.params.id)
+    );
+    response.status(200).json(getMealByID);
+  } catch (e) {
+    response.status(400).send("Please input a valid ID");
+  }
 });
 
 router.put("/:id", async (request, response) => {
@@ -32,8 +31,7 @@ router.put("/:id", async (request, response) => {
       .where("id", parseInt(request.params.id))
       .update(request.body);
     response.status(200).json(updateMealByID);
-  } catch (error) {
-    console.log(error);
+  } catch (e) {
     response
       .status(400)
       .send("Could not update meal, please check you have the correct ID");
@@ -46,7 +44,7 @@ router.delete("/:id", async (request, response) => {
       .where("id", parseInt(request.params.id))
       .del();
     response.status(200).json(deleteMealByID);
-  } catch {
+  } catch (e) {
     response
       .status(400)
       .send("Could not delete meal, please check you have the correct ID");

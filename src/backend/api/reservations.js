@@ -29,7 +29,7 @@ router.get("/:id", async (request, response) => {
       parseInt(request.params.id)
     );
     response.status(200).json(getReservationByID);
-  } catch {
+  } catch (e) {
     response.status(400).send("Please input a valid ID");
   }
 });
@@ -40,7 +40,7 @@ router.put("/:id", async (request, response) => {
       .where("id", parseInt(request.params.id))
       .update(request.body);
     response.status(200).json(updateReservationByID);
-  } catch {
+  } catch (e) {
     response
       .status(400)
       .send(
@@ -55,7 +55,7 @@ router.delete("/:id", async (request, response) => {
       .where("id", parseInt(request.params.id))
       .del();
     response.status(200).json(deleteReservationByID);
-  } catch {
+  } catch (e) {
     response
       .status(400)
       .send(
