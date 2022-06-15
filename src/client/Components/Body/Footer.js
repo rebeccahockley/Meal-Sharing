@@ -1,5 +1,9 @@
 import React from "react";
 import "./Styling/FooterStyles.css";
+import facebookLogo from "../assets/facebook.jpg";
+import gitHubLogo from "../assets/gitHub.jpg";
+import instagramLogo from "../assets/instagram.jpg";
+import linkedInLogo from "../assets/linkedIn.jpg";
 
 export const Footer = () => {
   return (
@@ -8,28 +12,28 @@ export const Footer = () => {
       <div id="footerImageContainer">
         <a href="https://www.facebook.com/">
           <img
-            src="/assets/facebook.jpg"
+            src={facebookLogo}
             className="footerImages"
             alt="Outline of Facebook Logo"
           ></img>
         </a>
         <a href="https://github.com/rebeccahockley">
           <img
-            src="/assets/gitHub.jpg"
+            src={gitHubLogo}
             className="footerImages"
             alt="Outline of GitHub Logo"
           ></img>
         </a>
         <a href="https://www.instagram.com/">
           <img
-            src="/assets/instagram.png"
+            src={instagramLogo}
             className="footerImages"
             alt="Outline of Instagram Logo"
           ></img>
         </a>
         <a href="https://www.linkedin.com/in/rebecca-hockley-6b4475238/">
           <img
-            src="/assets/linkedIn.png"
+            src={linkedInLogo}
             className="footerImages"
             alt="Outline of LinkedIn Logo"
           ></img>
