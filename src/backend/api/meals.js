@@ -14,15 +14,16 @@ router.post("/", async (request, response) => {
 });
 
 router.get("/:id", async (request, response) => {
-  try {
-    const getMealByID = await knex("Meal").where(
-      "ID",
-      parseInt(request.params.id)
-    );
-    response.status(200).json(getMealByID);
-  } catch {
-    response.status(400).send("Please input a valid ID");
-  }
+  // try {
+  //   const getMealByID = await knex("Meal").where(
+  //     "ID",
+  //     parseInt(request.params.id)
+  //   );
+  //   response.status(200).json(getMealByID);
+  // } catch {
+  //   response.status(400).send("Please input a valid ID");
+  // }
+  response.status(200).json({});
 });
 
 router.put("/:id", async (request, response) => {
