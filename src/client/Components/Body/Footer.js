@@ -1,9 +1,10 @@
 import React from "react";
 import "./Styling/FooterStyles.css";
+import facebook from "../assets/facebook.jpg";
 
-// import gitHubLogo from "/assets/gitHub.jpg";
-// import instagramLogo from "/assets/instagram.jpg";
-// import linkedInLogo from "/assets/linkedIn.jpg";
+// import gitHub from "/assets/gitHub.jpg";
+// import instagram from "/assets/instagram.jpg";
+// import linkedIn from "/assets/linkedIn.jpg";
 
 export const Footer = () => {
   return (
@@ -12,7 +13,7 @@ export const Footer = () => {
       <div id="footerImageContainer">
         <a href="https://www.facebook.com/">
           <img
-            src="../assets/facebook.jpg"
+            src={facebook}
             className="footerImages"
             alt="Outline of Facebook Logo"
           ></img>
