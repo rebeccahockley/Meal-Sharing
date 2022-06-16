@@ -27,6 +27,9 @@ export const Header = () => {
                 <Link to="/meals">Meals</Link>
               </li>
               <li className="navBarLinks">
+                <Link to="/add-meal">Add Meal</Link>
+              </li>
+              <li className="navBarLinks">
                 <Link to="/reviews">Reviews</Link>
               </li>
             </ul>

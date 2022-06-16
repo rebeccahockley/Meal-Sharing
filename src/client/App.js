@@ -5,6 +5,7 @@ import { Home } from "./Components/Pages/Home";
 import { Reviews } from "./Components/Pages/Reviews";
 import { Meals } from "./Components/Pages/Meals";
 import { MealIdPage } from "./Components/Pages/MealIdPage";
+import { AddMealPage } from "./Components/Pages/AddMeal";
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
       </Route>
       <Route exact path="/meals">
         <Meals />
+      </Route>
+      <Route exact path="/add-meal">
+        <AddMealPage />
       </Route>
       <Route exact path="/meals/:mealId">
         <MealIdPage />

@@ -48,7 +48,7 @@ export const ReservationForm = ({ reservationID }) => {
     <form>
       <div id="reservationForm">
         <label>
-          <p>Name:</p>
+          <p>Name:*</p>
           <input
             type="text"
             name="ContactName"
@@ -65,7 +65,7 @@ export const ReservationForm = ({ reservationID }) => {
           ></input>
         </label>
         <label>
-          <p>Email:</p>
+          <p>Email:*</p>
           <input
             type="text"
             name="ContactEmail"
@@ -73,11 +73,9 @@ export const ReservationForm = ({ reservationID }) => {
             onChange={handleInput}
           ></input>
         </label>
-        <span>
-          <button type="submit" onClick={handleSubmit}>
-            Submit
-          </button>
-        </span>
+        <button id="submitButton" type="submit" onClick={handleSubmit}>
+          Submit
+        </button>
       </div>
     </form>
   );
