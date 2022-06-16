@@ -18,6 +18,7 @@ p {
 }
 
 .lineDecoration {
+  margin-top: 5px;
   background-color: black;
-  height: 1.5px;
+  height: 2px;
 }
