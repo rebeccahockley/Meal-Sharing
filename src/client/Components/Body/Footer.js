@@ -1,6 +1,6 @@
 import React from "react";
 import "./Styling/FooterStyles.css";
-import facebook from "/assets/facebook.jpg";
+import facebook from "../../assets/facebook.jpg";
 
 // import gitHub from "/assets/gitHub.jpg";
 // import instagram from "/assets/instagram.jpg";
