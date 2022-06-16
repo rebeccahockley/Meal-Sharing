@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Styling/HeaderStyles.css";
+import banner from "../../assets/banner.jpeg";
 
 export const Header = () => {
   return (
@@ -10,7 +11,7 @@ export const Header = () => {
           <h1>Book. Meet. Eat.</h1>
           <h2>A meal sharing app designed to bring people together.</h2>
           <img
-            src="/assets/banner.jpeg"
+            src={banner}
             id="banner"
             alt="Banner showing 12 vector outlines of different food and drinks"
           ></img>
