@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Styling/MealFormStyling.css";
+import "./Styling/FormStyling.css";
 
 export const MealForm = () => {
   const [mealValues, setMealValues] = useState({

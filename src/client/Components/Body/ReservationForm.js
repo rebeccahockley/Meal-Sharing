@@ -46,7 +46,7 @@ export const ReservationForm = ({ reservationID }) => {
 
   return (
     <form>
-      <div id="reservationForm">
+      <div>
         <label>
           <p>Name:*</p>
           <input
