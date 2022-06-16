@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Styling/MealFormStyling.css";
 
 export const MealForm = () => {
   const [mealValues, setMealValues] = useState({
@@ -59,7 +60,7 @@ export const MealForm = () => {
       <div id="mealForm">
         <h3>Add a new meal</h3>
         <label>
-          <p>Title*:</p>
+          <p>Title:*</p>
           <input
             type="text"
             name="Title"
@@ -76,7 +77,7 @@ export const MealForm = () => {
           ></input>
         </label>
         <label>
-          <p>Location*:</p>
+          <p>Location:*</p>
           <input
             type="text"
             name="Location"
@@ -85,7 +86,7 @@ export const MealForm = () => {
           ></input>
         </label>
         <label>
-          <p>When*:</p>
+          <p>When:*</p>
           <input
             type="datetime-local"
             name="When"
@@ -94,7 +95,7 @@ export const MealForm = () => {
           ></input>
         </label>
         <label>
-          <p>Max. Reservations*:</p>
+          <p>Max. Reservations:*</p>
           <input
             type="number"
             name="MaxReservations"
@@ -103,7 +104,7 @@ export const MealForm = () => {
           ></input>
         </label>
         <label>
-          <p>Price*:</p>
+          <p>Price:*</p>
           <input
             type="text"
             name="Price"
@@ -111,7 +112,7 @@ export const MealForm = () => {
             onChange={handleMealInput}
           ></input>
         </label>
-
+        <br />
         <button id="submitButton" type="submit" onClick={handleMealSubmit}>
           Submit
         </button>
