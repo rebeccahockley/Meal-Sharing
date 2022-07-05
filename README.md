@@ -4,7 +4,7 @@
     <br> 
 </p>
 
-https://bookmeateat-hyf.herokuapp.com/
+<p align="center">https://bookmeateat-hyf.herokuapp.com/</p>
 
 ![image](https://user-images.githubusercontent.com/94187631/177313254-69f17544-2ba1-48b1-a501-f5053d583fc8.png)
 ![image](https://user-images.githubusercontent.com/94187631/177313320-07353468-e7d2-4819-b8a8-55dde4df3ae6.png)
