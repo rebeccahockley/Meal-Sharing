@@ -5,36 +5,22 @@
 
 <h3 align="center">Meal sharing api</h3>
 
-<div align="center">
-
-[![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
-
-</div>
-
----
-
 <p align="center"> Website api for sharing meals together. Invite your best friends or your family for dinner!
     <br> 
 </p>
 
-- [Built Using](#built_using)
-- [Authors](#authors)
+https://bookmeateat-hyf.herokuapp.com/
 
-## 🧐 About <a name = "about"></a>
+![image](https://user-images.githubusercontent.com/94187631/177313254-69f17544-2ba1-48b1-a501-f5053d583fc8.png)
+![image](https://user-images.githubusercontent.com/94187631/177313320-07353468-e7d2-4819-b8a8-55dde4df3ae6.png)
 
-Link to deployed website: 
-
-
-### Installing
+## Installing
 
 To install run `npm install`
 
 ## 🎈 Usage <a name="usage"></a>
 
 To run `npm run dev`
-
-The api can now be found on `http://localhost:3000/api/` an example is `http://localhost:3000/api/meals`
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
