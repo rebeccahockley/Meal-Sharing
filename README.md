@@ -6,8 +6,6 @@
 
 https://bookmeateat-hyf.herokuapp.com/
 
-<iframe src="https://giphy.com/embed/QNZ4yTu0PyFO2sg2CG" width="480" height="256" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/QNZ4yTu0PyFO2sg2CG">via GIPHY</a></p>
-
 ![image](https://user-images.githubusercontent.com/94187631/177313254-69f17544-2ba1-48b1-a501-f5053d583fc8.png)
 ![image](https://user-images.githubusercontent.com/94187631/177313320-07353468-e7d2-4819-b8a8-55dde4df3ae6.png)
 
