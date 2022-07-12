@@ -1,0 +1,9 @@
+#reviewContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#reviewContainer > div {
+  padding: 20px;
+  width: 200px;
+}

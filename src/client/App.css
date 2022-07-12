@@ -1,3 +1,24 @@
-* {
-    box-sizing: border-box;
+h1 {
+  font-size: 36px;
+  letter-spacing: 0.07em;
+}
+
+h2 {
+  font-size: 18px;
+  font-style: italic;
+}
+
+h3 {
+  font-size: 20px;
+  padding: 0px;
+}
+
+p {
+  font-size: 13px;
+}
+
+.lineDecoration {
+  margin-top: 5px;
+  background-color: black;
+  height: 2px;
 }
