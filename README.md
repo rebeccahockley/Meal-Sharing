@@ -20,7 +20,7 @@ To run `npm run dev`
 ## ⛏️ Built Using <a name = "built_using"></a>
 
 - [Mysql](https://www.npmjs.com/package/mysql) - Database
-- [Express](https://expressjs.com/) - Server Framework
+- [React](https://reactjs.org/) 
 - [NodeJs](https://nodejs.org/en/) - Server Environment
 
 ## ✍️ Authors <a name = "authors"></a>
