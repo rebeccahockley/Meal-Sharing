@@ -1,0 +1,19 @@
+#title {
+  text-align: center;
+}
+
+#navBar {
+  text-align: center;
+}
+
+.navBarLinks {
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
+  font-size: 18px;
+}
+
+#banner {
+  max-width: 90%;
+  height: auto;
+}

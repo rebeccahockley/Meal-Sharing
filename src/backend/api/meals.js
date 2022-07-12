@@ -20,7 +20,7 @@ router.get("/:id", async (request, response) => {
       parseInt(request.params.id)
     );
     response.status(200).json(getMealByID);
-  } catch {
+  } catch (e) {
     response.status(400).send("Please input a valid ID");
   }
 });
@@ -31,7 +31,7 @@ router.put("/:id", async (request, response) => {
       .where("id", parseInt(request.params.id))
       .update(request.body);
     response.status(200).json(updateMealByID);
-  } catch {
+  } catch (e) {
     response
       .status(400)
       .send("Could not update meal, please check you have the correct ID");
@@ -44,7 +44,7 @@ router.delete("/:id", async (request, response) => {
       .where("id", parseInt(request.params.id))
       .del();
     response.status(200).json(deleteMealByID);
-  } catch {
+  } catch (e) {
     response
       .status(400)
       .send("Could not delete meal, please check you have the correct ID");
